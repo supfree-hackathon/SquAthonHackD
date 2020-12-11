@@ -25,7 +25,7 @@ public class IntroActivity extends AppCompatActivity {
     }
 
     public void openNewActivity(){
-        Intent intent = new Intent(this, NewActivity.class);
+        Intent intent = new Intent(this, NavigationDrawerActivity.class);
         startActivity(intent);
     }
 }
