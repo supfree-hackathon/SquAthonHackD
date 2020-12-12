@@ -11,7 +11,7 @@
                 android:topRightRadius="30dp" />
             <stroke
                 android:width="2dp"
-                android:color="#000000" />
+                android:color="#407294" />
         </shape>
     </item>
 </selector>
