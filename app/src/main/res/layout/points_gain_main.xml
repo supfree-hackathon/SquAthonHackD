@@ -9,14 +9,27 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="295dp"
-        android:layout_height="54dp"
+        android:layout_width="193dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="#3A8A5E"
         android:text="παιξε ενα παιχνιδι"
         app:backgroundTint="@null"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="192dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#3A8A5E"
+        android:text="παιξε ενα κουιζ"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
@@ -34,8 +47,8 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="373dp"
-        android:layout_height="247dp"
+        android:layout_width="380dp"
+        android:layout_height="245dp"
         android:background="@drawable/border"
         android:fontFamily="serif"
         android:text="Απόκτησε πόντους με δημιουργικούς τρόπους όπως κουίζ και παιχνίδια σχεδιασμένα με σκοπό την εμπλούτιση των γνώσεων σου πάνω σε οικολογικά θέματα."
@@ -51,8 +64,8 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="373dp"
-        android:layout_height="247dp"
+        android:layout_width="377dp"
+        android:layout_height="249dp"
         android:background="@drawable/border"
         android:fontFamily="serif"
         android:text="Μάθε που μπορείς να βρεις προϊόντα που προστατεύουν το περιβάλλον με την αγορά των οποίων το RePlace θα σε επιβραβεύει με πόντους RP στηρίζοντας την οικολογική σου συνείδηση και προωθώντας περαιτέρω αγορές που δεν είναι επιβλαβείς για τη φύση."
