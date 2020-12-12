@@ -15,8 +15,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class GameOverActivity extends AppCompatActivity {
 
     private ViewGroup mainLayout;
-    private TextView textView3;
-    private TextView textView4;
+    private TextView go;
+    private TextView gopoints;
     private Button button1;
     private Intent intent;
     private int points;
@@ -27,15 +27,15 @@ public class GameOverActivity extends AppCompatActivity {
         setContentView(R.layout.fragment_gameover);
 
         mainLayout = (RelativeLayout) findViewById(R.id.main2);
-        textView3 = (TextView) findViewById(R.id.textView3);
-        textView4 = (TextView) findViewById(R.id.textView4);
+        go = (TextView) findViewById(R.id.gameo);
+        gopoints = (TextView) findViewById(R.id.gopoints);
         button1 = (Button) findViewById(R.id.ok);
 
         intent = getIntent();
         points = intent.getIntExtra("points",0);
 
-        textView3.setText("Μπράβο user κέρδισες");
-        textView3.setText(points+" πόντους");
+        go.setText("Game Over");
+        gopoints.setText("Μπράβο user κέρδισες "+points+" πόντους");
 
         button1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

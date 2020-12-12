@@ -33,7 +33,7 @@ public class GameActivity extends AppCompatActivity {
     private int yDelta;
 
     private int points;
-    private int gamecounter = 4;
+    private Integer gamecounter = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -144,6 +144,7 @@ public class GameActivity extends AppCompatActivity {
                             }
 
                         }
+
                         if(gamecounter == 4){
                             Intent intent = new Intent(GameActivity.this, GameOverActivity.class);
                             intent.putExtra("points",points);
