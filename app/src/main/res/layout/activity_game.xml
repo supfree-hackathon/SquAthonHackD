@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background_game">
+
+
+    <ImageView
+        android:id="@+id/imgpbag"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="200dp"
+        android:contentDescription="plastic"
+        android:src="@drawable/pbag" />
+
+    <ImageView
+        android:id="@+id/imgpbottle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        android:contentDescription="plastic"
+        android:src="@drawable/pbottle" />
+
+    <ImageView
+        android:id="@+id/imgmask"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="250dp"
+        android:contentDescription="trash"
+        android:src="@drawable/mask" />
+
+    <ImageView
+        android:id="@+id/imgcoca"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="plastic"
+        android:src="@drawable/coca" />
+
+    <ImageView
+        android:id="@+id/imgbintrash"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-6dp"
+        android:layout_marginBottom="19dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bintrash" />
+
+    <ImageView
+        android:id="@+id/imgbinpaper"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="19dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/binpaper" />
+
+    <ImageView
+        android:id="@+id/imgbinplastic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="19dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/binplastic" />
+
+    <TextView
+        android:id="@+id/pontoi"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="Ποντοι : " />
+
+
+</RelativeLayout>

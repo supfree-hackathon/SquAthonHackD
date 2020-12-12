@@ -8,24 +8,11 @@
     android:outlineAmbientShadowColor="#000000"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/button2"
-        android:layout_width="306dp"
+        android:layout_width="295dp"
         android:layout_height="102dp"
+        android:layout_marginStart="4dp"
         android:background="@drawable/oval_button"
         android:text="Ξεκινα Να Μαζευεις Ποντους"
         android:textSize="18sp"
@@ -36,22 +23,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.125" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="89dp"
-        android:layout_height="96dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="80dp"
-        android:src="@drawable/kisspng_information_liberty_media_corporation_corporate_so_enviroment_day_5b4401fa42ecf7_4065837015311836102741"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/button3"
-        android:layout_width="306dp"
+        android:layout_width="295dp"
         android:layout_height="102dp"
+        android:layout_marginStart="4dp"
         android:background="@drawable/oval_button"
         android:text="ΒΡΕΣ ΣΗΜΕΙΑ ΕΞΑΡΓΥΡΩΣΗΣ"
         android:textSize="18sp"
@@ -66,13 +42,12 @@
         android:id="@+id/imageView4"
         android:layout_width="82dp"
         android:layout_height="102dp"
+        android:layout_marginEnd="4dp"
         android:src="@drawable/kisspng_responsive_web_design_social_media_google_maps_com_map_icon_5abfaf382c12a9_8640671315225116721805"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.739"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.737" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81" />
 
     <Button
         android:id="@+id/signinButton"
@@ -87,5 +62,63 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="442dp"
+        android:layout_height="292dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.472">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:scaleType="fitStart"
+                android:adjustViewBounds="true"
+                android:src="@drawable/toothbrush" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/bottle" />
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:scaleType="fitStart"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bag" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/tupperwave" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="87dp"
+        android:layout_height="102dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/points_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
