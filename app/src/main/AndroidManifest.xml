@@ -16,6 +16,7 @@
         <activity android:name=".IntroActivity" />
         <activity android:name=".GameActivity" />
         <activity android:name=".GameOverActivity" />
+        <activity android:name=".StoreListActivity" />
         <activity android:name="com.example.replace.PointGainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

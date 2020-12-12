@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class PointGainActivity extends AppCompatActivity {
 
     private Button gamebutton;
+    private Button storebutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,14 @@ public class PointGainActivity extends AppCompatActivity {
         gamebutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent(PointGainActivity.this, GameActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        storebutton = (Button) findViewById(R.id.button5);
+        storebutton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(PointGainActivity.this, StoreListActivity.class);
                 startActivity(intent);
             }
         });
