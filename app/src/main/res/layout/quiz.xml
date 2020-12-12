@@ -10,31 +10,34 @@
         android:id="@+id/btn_one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/btn_two"/>
+        android:layout_above="@+id/btn_two"
+        android:layout_marginBottom="-3dp"
+        android:text="Button" />
+
     <Button
         android:id="@+id/btn_two"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/btn_three"/>
+        android:layout_above="@+id/btn_three"
+        android:layout_marginBottom="0dp"
+        android:text="Button" />
+
     <Button
         android:id="@+id/btn_three"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/btn_four"/>
+        android:layout_above="@+id/btn_four"
+        android:layout_marginBottom="0dp"
+        android:text="Button" />
+
     <Button
         android:id="@+id/btn_four"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="168dp"
+        android:text="Button" />
+
     <TextView
         android:id="@+id/tv_question"
         android:layout_width="match_parent"

@@ -2,6 +2,7 @@ package com.example.replace;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +25,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     private String answer;
     private int questionLength = question.questions.length;
     int random;
+    private int points = 0;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,37 +50,81 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.btn_one:
                 if(btn_one.getText() == answer){
+                    //Toast.makeText(QuizActivity.this,  "Σωστή Απάντηση!", Toast.LENGTH_SHORT).show();
                     //print "YOU ARE CORRECT"
+                    Toast toast = Toast.makeText(this, "Σωστή Απάντηση!", Toast.LENGTH_SHORT);
+                    TextView t = (TextView) toast.getView().findViewById(android.R.id.message);
+                    t.setTextColor(Color.GREEN);
+                    toast.show();
+                    points+=5;
                     NextQuestion(random++);
                 }else{
                     //You are WRONG
+                    //Toast.makeText(QuizActivity.this,  "Λάθος Απάντηση", Toast.LENGTH_SHORT).show();
+                    Toast toast = Toast.makeText(this, "Λάθος Απάντηση", Toast.LENGTH_SHORT);
+                    TextView t = (TextView) toast.getView().findViewById(android.R.id.message);
+                    t.setTextColor(Color.RED);
+                    toast.show();
                     NextQuestion(random++);
                 }
                 break;
             case R.id.btn_two:
                 if(btn_two.getText() == answer){
                     //print "YOU ARE CORRECT"
+                    //Toast.makeText(QuizActivity.this,  "Σωστή Απάντηση!", Toast.LENGTH_SHORT).show();
+                    Toast toast = Toast.makeText(this, "Σωστή Απάντηση!", Toast.LENGTH_SHORT);
+                    TextView t = (TextView) toast.getView().findViewById(android.R.id.message);
+                    t.setTextColor(Color.GREEN);
+                    toast.show();
+                    points+=5;
                     NextQuestion(random++);
                 }else{
                     //You are WRONG
+                    //Toast.makeText(QuizActivity.this,  "Λάθος Απάντηση", Toast.LENGTH_SHORT).show();
+                    Toast toast = Toast.makeText(this, "Λάθος Απάντηση", Toast.LENGTH_SHORT);
+                    TextView t = (TextView) toast.getView().findViewById(android.R.id.message);
+                    t.setTextColor(Color.RED);
+                    toast.show();
                     NextQuestion(random++);
                 }
                 break;
             case R.id.btn_three:
                 if(btn_three.getText() == answer){
                     //print "YOU ARE CORRECT"
+                    //Toast.makeText(QuizActivity.this,  "Σωστή Απάντηση!", Toast.LENGTH_SHORT).show();
+                    Toast toast = Toast.makeText(this, "Σωστή Απάντηση!", Toast.LENGTH_SHORT);
+                    TextView t = (TextView) toast.getView().findViewById(android.R.id.message);
+                    t.setTextColor(Color.GREEN);
+                    toast.show();
+                    points+=5;
                     NextQuestion(random++);
                 }else{
                     //You are WRONG
+                    //Toast.makeText(QuizActivity.this,  "Λάθος Απάντηση", Toast.LENGTH_SHORT).show();
+                    Toast toast = Toast.makeText(this, "Λάθος Απάντηση", Toast.LENGTH_SHORT);
+                    TextView t = (TextView) toast.getView().findViewById(android.R.id.message);
+                    t.setTextColor(Color.RED);
+                    toast.show();
                     NextQuestion(random++);
                 }
                 break;
             case R.id.btn_four:
                 if(btn_four.getText() == answer){
                     //print "YOU ARE CORRECT"
+                    //Toast.makeText(QuizActivity.this,  "Σωστή Απάντηση!", Toast.LENGTH_SHORT).show();
+                    Toast toast = Toast.makeText(this, "Σωστή Απάντηση!", Toast.LENGTH_SHORT);
+                    TextView t = (TextView) toast.getView().findViewById(android.R.id.message);
+                    t.setTextColor(Color.GREEN);
+                    toast.show();
+                    points+=5;
                     NextQuestion(random++);
                 }else{
                     //You are WRONG
+                    //Toast.makeText(QuizActivity.this,  "Λάθος Απάντηση", Toast.LENGTH_SHORT).show();
+                    Toast toast = Toast.makeText(this, "Λάθος Απάντηση", Toast.LENGTH_SHORT);
+                    TextView t = (TextView) toast.getView().findViewById(android.R.id.message);
+                    t.setTextColor(Color.RED);
+                    toast.show();
                     NextQuestion(random++);
                 }
                 break;
@@ -99,7 +145,12 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
                 });
         alertDialogBuilder.show();
         */
+        //Toast.makeText(QuizActivity.this,  "Συγχαρητήρια! Μάζεψες "+ points + " πόντους!", Toast.LENGTH_SHORT).show();
+        //TODO integration with Stef's game over
+        //Integration
         Intent intent = new Intent(QuizActivity.this, PointGainActivity.class);
+        //TODO uncomment this
+        //intent.putExtra("points",points);
         startActivity(intent);
     }
     private void NextQuestion(int num){
