@@ -14,6 +14,7 @@
             android:label="@string/title_activity_navigation_drawer"
             android:theme="@style/Theme.RePlace.NoActionBar"></activity>
         <activity android:name=".IntroActivity" />
+        <activity android:name="com.example.replace.PointGainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
