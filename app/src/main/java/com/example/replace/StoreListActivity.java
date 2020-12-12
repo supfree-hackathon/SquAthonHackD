@@ -1,5 +1,6 @@
 package com.example.replace;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -38,6 +39,8 @@ public class StoreListActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Toast.makeText(StoreListActivity.this,"clicked item:"+i+" "+storeslist.get(i).toString(),Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(StoreListActivity.this, MapsActivity.class);
+                startActivity(intent);
             }
         });
 
