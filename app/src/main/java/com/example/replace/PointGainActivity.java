@@ -12,6 +12,8 @@ public class PointGainActivity extends AppCompatActivity {
     private Button gamebutton;
     private Button storebutton;
 
+    private Button PlayQuizButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,16 @@ public class PointGainActivity extends AppCompatActivity {
         storebutton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent(PointGainActivity.this, StoreListActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        PlayQuizButton = (Button) findViewById(R.id.button6);
+        PlayQuizButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //ToDo
+                //getBaseContext() isws na mh doulepsei
+                Intent intent = new Intent(getBaseContext(), QuizActivity.class);
                 startActivity(intent);
             }
         });
