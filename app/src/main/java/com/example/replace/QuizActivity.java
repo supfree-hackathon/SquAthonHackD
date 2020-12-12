@@ -47,6 +47,10 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+
+        if(random>4){
+            GameOver();
+        }else{
         switch (v.getId()){
             case R.id.btn_one:
                 if(btn_one.getText() == answer){
@@ -128,6 +132,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
                     NextQuestion(random++);
                 }
                 break;
+        }
         }
     }
 

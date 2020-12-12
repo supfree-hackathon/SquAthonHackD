@@ -15,7 +15,7 @@
             android:theme="@style/Theme.RePlace.NoActionBar"></activity>
         <activity android:name=".IntroActivity" />
         <activity android:name=".QuizActivity" />
-        <activity android:name="com.example.replace.PointGainActivity" />
+        <activity android:name=".PointGainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
