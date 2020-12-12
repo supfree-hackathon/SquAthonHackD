@@ -78,17 +78,14 @@
         android:id="@+id/button4"
         android:layout_width="372dp"
         android:layout_height="63dp"
-        android:layout_marginTop="43dp"
-        android:backgroundTint="#3A8A5E"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#34A9BD"
         android:text="εγγραφη/συνδεση"
         android:textSize="18sp"
         android:textStyle="bold"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.589"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.36" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
