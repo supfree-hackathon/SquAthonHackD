@@ -16,19 +16,27 @@ Mέσω quizes ή άλλων παιχνιδιών αλλά και σε μετέ�
 ## Technologies Used
 
 Android SDK
+
 Java
+
 Google Maps API
+
 NodeJS
+
 MongoDB
 
 ## Installation
 
 App installation
+
 Put RePlaceV1.apk on your phone and run the App!!
 
 Android Studio installation
+
 Download Android Studio 4.1.1
+
 Create New Project from Version Control from url https://github.com/supfree-hackathon/SquAthonHackD.git
+
 Run on Pixel4 (Android 9.0 API28)
 
 
