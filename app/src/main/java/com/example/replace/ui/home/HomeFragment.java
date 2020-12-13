@@ -16,6 +16,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.replace.PointGainActivity;
 import com.example.replace.R;
+import com.example.replace.StoreListActivity;
 
 public class HomeFragment extends Fragment {
 
@@ -34,6 +35,15 @@ public class HomeFragment extends Fragment {
         PlayButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), PointGainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //TODO launch maps
+        PlayButton = (Button) root.findViewById(R.id.button3);
+        PlayButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), StoreListActivity.class);
                 startActivity(intent);
             }
         });
