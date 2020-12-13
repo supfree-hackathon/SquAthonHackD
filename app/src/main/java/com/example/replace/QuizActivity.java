@@ -153,9 +153,8 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         //Toast.makeText(QuizActivity.this,  "Συγχαρητήρια! Μάζεψες "+ points + " πόντους!", Toast.LENGTH_SHORT).show();
         //TODO integration with Stef's game over
         //Integration
-        Intent intent = new Intent(QuizActivity.this, PointGainActivity.class);
-        //TODO uncomment this
-        //intent.putExtra("points",points);
+        Intent intent = new Intent(QuizActivity.this, GameOverActivity.class);
+        intent.putExtra("points",points);
         startActivity(intent);
     }
     private void NextQuestion(int num){
