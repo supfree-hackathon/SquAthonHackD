@@ -16,12 +16,14 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.replace.PointGainActivity;
 import com.example.replace.R;
+import com.example.replace.ui.login.LoginActivity;
 
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
 
     private Button PlayButton;
+    private Button signInButton;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -29,6 +31,14 @@ public class HomeFragment extends Fragment {
                 new ViewModelProvider(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
+        signInButton = (Button) root.findViewById(R.id.signinButton);
+        signInButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
         PlayButton = (Button) root.findViewById(R.id.button2);
         PlayButton.setOnClickListener(new View.OnClickListener() {
