@@ -14,6 +14,9 @@ Mέσω quizes ή άλλων παιχνιδιών αλλά και σε μετέ�
 Παράλληλα θα μπορεί να χρησιμοποιήσει την κάμερα του κινητού του και να τραβήξει μια φωτογραφία από την οποία να βρει δυνατότητες αντικατάστασης των πλαστικών που θα υπάρχουν σε αυτή. 
 Οπότε θα ενθαρρυνθούν και θα διευκολυνθούν οι χρήστες για να αρχίσουν να αντικαθιστούν τα πλαστικά μιας χρήσης, μιας και θα έχουν κίνητρα και θα είναί το όλο εγχείρημα πιο προσιτό.
 
+Οτιδήποτε βλέπετε σε αυτό το Repo δημιουργήθηκε από τη SquAthonHackD κατά τη διάρκεια του supfree-hackathon.
+
+
 ## Technologies Used
 
 - Android SDK
@@ -39,7 +42,7 @@ Put RePlaceV1.apk on your phone and run the App!!
 
 Download Android Studio 4.1.1
 
-Create New Project from Version Control from url https://github.com/supfree-hackathon/SquAthonHackD.git
+Create New Project from Version Control with url https://github.com/supfree-hackathon/SquAthonHackD.git
 
 Run on Pixel4 (Android 9.0 API28)
 
