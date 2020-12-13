@@ -10,8 +10,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="271dp"
-        android:layout_height="48dp"
+        android:layout_width="198dp"
+        android:layout_height="28dp"
         android:layout_marginStart="176dp"
         android:layout_marginEnd="177dp"
         android:layout_marginBottom="199dp"
@@ -19,22 +19,24 @@
         android:accessibilityLiveRegion="polite"
 
         android:fontFamily="serif"
-        android:text='"Say no to single-use plastics"'
+        android:text='"Αντικαταστήστε'
         android:textAlignment="center"
         android:textColor="#3A8A5E"
         android:textSize="19sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageLogo"
-        app:layout_constraintVertical_bias="0.957" />
+        app:layout_constraintVertical_bias="0.947" />
 
     <ImageView
         android:id="@+id/imageLogo"
         android:layout_width="219dp"
         android:layout_height="206dp"
         android:layout_marginStart="121dp"
+        android:layout_marginTop="184dp"
         android:layout_marginEnd="121dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView17"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,5 +55,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/sample" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="285dp"
+        android:layout_height="38dp"
+        android:text='τα πλαστικά μιας χρήσης"'
+        android:textAlignment="center"
+        android:textColor="#3A8A5E"
+        android:textSize="19sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
