@@ -28,14 +28,26 @@ public class StoreListActivity extends AppCompatActivity {
         storelist = new ArrayList<Stores>();
         listView = (ListView) findViewById(R.id.listview);
 
-        Stores lidl = new Stores("Lidl Athina",37.97701,23.69480);
-        Stores lidl2 = new Stores("Lidl Athina2",37.96334,23.69686);
+        Stores ecofriendly_solutions = new Stores("ECOFRIENDLY SOLUTIONS",37.98459006043951, 23.733062742151237);
+        Stores lidl = new Stores("Lidl Αιγάλεω",37.99907474435186, 23.667714167654946);
+        Stores lidl2 = new Stores("Lidl Καλλιθέα",37.96137433874252, 23.697235065581285);
+        Stores lidl3 = new Stores("Lidl Ζωγράφου",37.98022756493354, 23.76087630216657);
+        Stores livgreen = new Stores("Living Green S.A.",37.984359214333544, 23.736956419710456);
+        Stores yogashop = new Stores("Simply Green - Yoga Shop",37.97730147606124, 23.726677068824703);
 
         storelist.add(lidl);
         storelist.add(lidl2);
+        storelist.add(lidl3);
+        storelist.add(livgreen);
+        storelist.add(yogashop);
+        storelist.add(ecofriendly_solutions);
 
         nameslist.add(lidl.getName());
         nameslist.add(lidl2.getName());
+        nameslist.add(lidl3.getName());
+        nameslist.add(livgreen.getName());
+        nameslist.add(yogashop.getName());
+        nameslist.add(ecofriendly_solutions.getName());
 
         arrayAdapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, nameslist);
         listView.setAdapter(arrayAdapter);
