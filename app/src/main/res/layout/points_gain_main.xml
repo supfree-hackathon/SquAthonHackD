@@ -8,6 +8,19 @@
     android:background="@drawable/gradient_background">
 
     <Button
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:background="@drawable/triangle_button"
+        android:rotation="0270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
         android:id="@+id/button"
         android:layout_width="193dp"
         android:layout_height="50dp"
@@ -51,16 +64,55 @@
         android:layout_height="245dp"
         android:background="@drawable/border"
         android:fontFamily="serif"
-        android:text="Απόκτησε πόντους με δημιουργικούς τρόπους όπως κουίζ και παιχνίδια σχεδιασμένα με σκοπό την εμπλούτιση των γνώσεων σου πάνω σε οικολογικά θέματα."
+        android:text="Απόκτησε πόντους παίζοντας εκπαιδευτικά παιχνίδια και κουίζ."
         android:textAlignment="center"
         android:textColor="#3A8A5E"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.119" />
+        app:layout_constraintVertical_bias="0.131" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="107dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.653"
+        app:srcCompat="@drawable/kisspng_100_pics_quiz_guess_the_picture_trivia_games_his_trivia_history_quiz_5b1978b37a7de2_8519778915283959555017" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="129dp"
+        android:layout_height="113dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.871"
+        app:srcCompat="@drawable/kisspng_decision_making_decision_quality_decision_tree_cli_box_pursuit_questions_quiz_pro_5b1976a63a3e23_8668090415283954302386" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView9"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.641"
+        app:srcCompat="@drawable/kisspng_mobile_app_development_handheld_devices_computer_i_5ae028c8148004_879218481524639944084" />
 
     <TextView
         android:id="@+id/textView4"
@@ -68,10 +120,10 @@
         android:layout_height="249dp"
         android:background="@drawable/border"
         android:fontFamily="serif"
-        android:text="Μάθε που μπορείς να βρεις προϊόντα που προστατεύουν το περιβάλλον με την αγορά των οποίων το RePlace θα σε επιβραβεύει με πόντους RP στηρίζοντας την οικολογική σου συνείδηση και προωθώντας περαιτέρω αγορές που δεν είναι επιβλαβείς για τη φύση."
+        android:text="  Κέρδισε πόντους αγοράζοντας οικολογικά προϊόντα από τους συνεργάτες μας."
         android:textAlignment="center"
         android:textColor="#3A8A5E"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,85 +132,47 @@
         app:layout_constraintVertical_bias="0.29" />
 
     <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="112dp"
+        android:layout_height="117dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.772"
+        app:srcCompat="@drawable/kisspng_responsive_web_design_social_media_google_maps_com_map_icon_5abfaf382c12a9_8640671315225116721805" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.67"
+        app:srcCompat="@drawable/kisspng_computer_icons_arrow_symbol_pfeil_5b3f614b9bc311_420841171530880331638" />
+
+    <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="105dp"
-        android:layout_height="94dp"
+        android:layout_width="135dp"
+        android:layout_height="146dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="241dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.733"
         app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.973"
+        app:layout_constraintVertical_bias="0.796"
         app:srcCompat="@drawable/kisspng_grocery_store_facade_supermarket_building_emerging_supermarket_5adc025242b295_5597719915243679542732" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="124dp"
-        android:layout_height="65dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintHorizontal_bias="0.514"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.895"
-        app:srcCompat="@drawable/kisspng_computer_icons_arrow_symbol_pfeil_5b3f614b9bc311_420841171530880331638" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="79dp"
-        android:layout_height="73dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintHorizontal_bias="0.238"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toTopOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.89"
-        app:srcCompat="@drawable/kisspng_responsive_web_design_social_media_google_maps_com_map_icon_5abfaf382c12a9_8640671315225116721805" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="116dp"
-        android:layout_height="97dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.9"
-        app:srcCompat="@drawable/kisspng_decision_making_decision_quality_decision_tree_cli_box_pursuit_questions_quiz_pro_5b1976a63a3e23_8668090415283954302386" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="93dp"
-        android:layout_height="81dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.086"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toTopOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.865"
-        app:srcCompat="@drawable/kisspng_100_pics_quiz_guess_the_picture_trivia_games_his_trivia_history_quiz_5b1978b37a7de2_8519778915283959555017" />
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="90dp"
-        android:layout_height="79dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
-        app:layout_constraintEnd_toStartOf="@+id/imageView9"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.854"
-        app:srcCompat="@drawable/kisspng_mobile_app_development_handheld_devices_computer_i_5ae028c8148004_879218481524639944084" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="411dp"
-        android:layout_height="51dp"
+        android:layout_height="52dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
