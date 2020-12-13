@@ -4,7 +4,7 @@ TID: 20
 
 
 # RePlace App
-[Replace](https://github.com/supfree-hackathon/SquAthonHackD/blob/master/app/src/main/res/drawable-v24/logo.png)
+![alt text](https://github.com/supfree-hackathon/SquAthonHackD/blob/master/app/src/main/res/drawable-v24/logo.png)
 
 ## Description
 Το πρότζεκτ μας βασίζεται στη θέληση μας να ενημερώσουμε τους χρήστες αλλά και να τους βοηθήσουμε να αντικαταστήσουν τα πλαστικά μιας χρήσης με εναλλακτικά προϊόντα. 
