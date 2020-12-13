@@ -2,6 +2,7 @@ package com.example.replace;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.util.Log;
@@ -104,9 +105,17 @@ public class GameActivity extends AppCompatActivity {
                                 gamecounter++;
                             }
                             else if(paperBound.intersect(movingBound)){
+                                Toast toast = Toast.makeText(GameActivity.this, "Λάθος Απάντηση", Toast.LENGTH_SHORT);
+                                TextView t = (TextView) toast.getView().findViewById(android.R.id.message);
+                                t.setTextColor(Color.RED);
+                                toast.show();
                                 gamecounter++;
                             }
                             else if(plasticBound.intersect(movingBound)){
+                                Toast toast = Toast.makeText(GameActivity.this, "Λάθος Απάντηση", Toast.LENGTH_SHORT);
+                                TextView t = (TextView) toast.getView().findViewById(android.R.id.message);
+                                t.setTextColor(Color.RED);
+                                toast.show();
                                 gamecounter++;
                             }
                         }
@@ -120,9 +129,17 @@ public class GameActivity extends AppCompatActivity {
                                 gamecounter++;
                             }
                             else if(trashBound.intersect(movingBound)){
+                                Toast toast = Toast.makeText(GameActivity.this, "Λάθος Απάντηση", Toast.LENGTH_SHORT);
+                                TextView t = (TextView) toast.getView().findViewById(android.R.id.message);
+                                t.setTextColor(Color.RED);
+                                toast.show();
                                 gamecounter++;
                             }
                             else if(plasticBound.intersect(movingBound)){
+                                Toast toast = Toast.makeText(GameActivity.this, "Λάθος Απάντηση", Toast.LENGTH_SHORT);
+                                TextView t = (TextView) toast.getView().findViewById(android.R.id.message);
+                                t.setTextColor(Color.RED);
+                                toast.show();
                                 gamecounter++;
                             }
                         }
@@ -137,9 +154,17 @@ public class GameActivity extends AppCompatActivity {
                                 gamecounter++;
                             }
                             else if(paperBound.intersect(movingBound)){
+                                Toast toast = Toast.makeText(GameActivity.this, "Λάθος Απάντηση", Toast.LENGTH_SHORT);
+                                TextView t = (TextView) toast.getView().findViewById(android.R.id.message);
+                                t.setTextColor(Color.RED);
+                                toast.show();
                                 gamecounter++;
                             }
                             else if(trashBound.intersect(movingBound)){
+                                Toast toast = Toast.makeText(GameActivity.this, "Λάθος Απάντηση", Toast.LENGTH_SHORT);
+                                TextView t = (TextView) toast.getView().findViewById(android.R.id.message);
+                                t.setTextColor(Color.RED);
+                                toast.show();
                                 gamecounter++;
                             }
 

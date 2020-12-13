@@ -12,7 +12,7 @@
     com.example.replace
 
     SHA-1 certificate fingerprint:
-    B7:C6:F7:1C:6D:DF:47:50:BD:00:48:63:1E:2C:65:86:81:E8:71:38
+    51:51:A5:13:91:07:6B:D8:38:32:CF:38:86:7E:E4:1C:A3:74:5B:77
 
     Alternatively, follow the directions here:
     https://developers.google.com/maps/documentation/android/start#get-key
@@ -20,5 +20,7 @@
     Once you have your key (it starts with "AIza"), replace the "google_maps_key"
     string in this file.
     -->
+
+                                                                                                <!-- TODO UPDATE WITH OWN KEY-->
     <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">AIzaSyDvt4ApLOtUIo2QWCnTz933Nu5t0D-O69E</string>
 </resources>
