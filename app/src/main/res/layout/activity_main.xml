@@ -35,11 +35,23 @@
         android:layout_width="219dp"
         android:layout_height="206dp"
         android:layout_marginStart="121dp"
-        android:layout_marginTop="184dp"
         android:layout_marginEnd="121dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView17"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.802"
         app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="416dp"
+        android:layout_height="421dp"
+        android:layout_marginTop="420dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sample" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

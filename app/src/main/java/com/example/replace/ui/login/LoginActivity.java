@@ -30,6 +30,16 @@ public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
 
+    /*
+    Edittext username and password
+     */
+    private EditText uName, pwd;
+    /*
+    Button login and signup
+     */
+    private Button loginButton, signupButton;
+    private String username, password;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

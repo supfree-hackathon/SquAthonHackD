@@ -27,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
         Animation myFadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fadein);
         myImageView.startAnimation(myFadeInAnimation); //Set animation to your ImageView
 
+//        ImageView myImageView2= (ImageView)findViewById(R.id.clouds);
+//        Animation myFadeInAnimation2 = AnimationUtils.loadAnimation(this, R.anim.fadein);
+//        myImageView.startAnimation(myFadeInAnimation2); //Set animation to your ImageView
+
         timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override
