@@ -1,28 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@drawable/gradient_background"
     >
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Photo"></Button>
+        android:layout_width="161dp"
+        android:layout_height="66dp"
+        android:text="Photo"
+        android:translationX="30dp"
+        android:translationY="646dp"
+        app:backgroundTint="#3A8A5E"
+        app:rippleColor="#3A8A5E"></Button>
 
     <Button
         android:id="@+id/drawbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="161dp"
+        android:layout_height="66dp"
         android:text="Draw"
-        android:translationX="150dp"
-        android:translationY="-48dp"></Button>
+        android:translationX="220dp"
+        android:translationY="646dp"
+        app:backgroundTint="#3A8A5E"
+        app:rippleColor="#3A8A5E"></Button>
 
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="match_parent"
         android:layout_height="532dp"
-        android:src="@drawable/ic_menu_slideshow"></ImageView>
+        android:translationY="65dp"
+        android:src="@drawable/ic_menu_slideshow"
+        app:backgroundTint="@null"
+        ></ImageView>
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:translationY="0dp"
+        android:background="@drawable/gradient_background2"
+        app:srcCompat="@drawable/text_replace" />
+
+</RelativeLayout>
