@@ -24,7 +24,9 @@ Mέσω quizes ή άλλων παιχνιδιών αλλά και σε μετέ�
 
 - NodeJS
 
--MongoDB
+- MongoDB
+
+
 
 ## Installation
 
