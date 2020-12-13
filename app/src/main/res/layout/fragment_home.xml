@@ -83,6 +83,10 @@
                 android:layout_height="match_parent"
                 android:layout_width="wrap_content"
                 android:scaleType="fitStart"
+                android:paddingBottom="60dp"
+                android:paddingLeft="60dp"
+                android:paddingTop="60dp"
+                android:paddingRight="30dp"
                 android:adjustViewBounds="true"
                 android:src="@drawable/toothbrush" />
 
@@ -90,6 +94,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
+                android:paddingTop="15dp"
+                android:paddingBottom="45dp"
                 android:scaleType="fitStart"
                 android:src="@drawable/bottle" />
 
@@ -97,6 +103,10 @@
                 android:layout_height="match_parent"
                 android:layout_width="wrap_content"
                 android:scaleType="fitStart"
+                android:paddingBottom="60dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="60dp"
+                android:paddingRight="30dp"
                 android:adjustViewBounds="true"
                 android:src="@drawable/bag" />
 
