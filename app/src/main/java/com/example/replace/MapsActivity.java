@@ -35,6 +35,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private String name;
 
     private TextView textAdr2;
+    private TextView storeName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,12 +43,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         setContentView(R.layout.activity_maps);
 
         textAdr2 = (TextView) findViewById(R.id.textAdr2);
+        storeName = (TextView) findViewById(R.id.storeName);
 
         intent = getIntent();
         name = intent.getStringExtra("Name");
         lat = intent.getDoubleExtra("Lat",0.00);
         lon = intent.getDoubleExtra("Lon",0.00);
 
+
+        storeName.setText(name);
         //startIntentService(lat,lon);
         getAddress(lat,lon);
         initMap();
