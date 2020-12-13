@@ -1,0 +1,30 @@
+{
+  "name": "replace_the_app",
+  "version": "1.0.0",
+  "description": "Server for replace app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "node",
+    "restful",
+    "api",
+    "server"
+  ],
+  "author": "SquAthonHackD",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "mongoose": "^4.10.8",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
