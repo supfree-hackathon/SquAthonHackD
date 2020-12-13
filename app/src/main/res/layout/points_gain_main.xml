@@ -8,6 +8,19 @@
     android:background="@drawable/gradient_background">
 
     <Button
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:background="@drawable/triangle_button"
+        android:rotation="0270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
         android:id="@+id/button"
         android:layout_width="193dp"
         android:layout_height="50dp"
@@ -158,7 +171,7 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="411dp"
-        android:layout_height="51dp"
+        android:layout_height="52dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"

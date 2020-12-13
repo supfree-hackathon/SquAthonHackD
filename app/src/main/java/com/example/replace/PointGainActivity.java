@@ -7,12 +7,16 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.replace.ui.home.HomeFragment;
+
 public class PointGainActivity extends AppCompatActivity {
 
     private Button gamebutton;
     private Button storebutton;
 
     private Button PlayQuizButton;
+
+    private Button BackButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,5 +48,16 @@ public class PointGainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        BackButton = (Button) findViewById(R.id.back_button);
+        BackButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //ToDo
+                //getBaseContext() isws na mh doulepsei
+                Intent intent2 = new Intent(getBaseContext(), NavigationDrawerActivity.class);
+                startActivity(intent2);
+            }
+        });
+
     }
 }
